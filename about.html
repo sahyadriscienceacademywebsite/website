@@ -40,11 +40,18 @@
       --p-font: 'Plus Jakarta Sans', sans-serif;
     }
 
+    html, body {
+      overflow-x: hidden;
+      max-width: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: var(--p-font);
       color: var(--p-navy);
       background-color: #fff;
-      overflow-x: hidden;
       line-height: 1.6;
     }
 
@@ -206,7 +213,7 @@
     }
     
     .hero-h1 {
-      font-size: clamp(44px, 5vw, 72px);
+      font-size: clamp(30px, 8vw, 72px);
       font-weight: 800;
       line-height: 1.05;
       margin-bottom: 24px;
@@ -342,10 +349,12 @@
 
     @media (max-width: 992px) {
       .about-hero { padding: 60px 0; min-height: auto; }
-      .hero-split { grid-template-columns: 1fr; gap: 60px; }
+      .hero-split { grid-template-columns: 1fr; gap: 40px; }
       .hero-content { max-width: 100%; text-align: center; display: flex; flex-direction: column; align-items: center; }
-      .hero-image-box { height: 450px; }
-      .hero-image-layer-bg { display: none; }
+      .hero-image-box { height: 350px; }
+      .hero-image-layer-bg, .hero-image-glow { display: none; }
+      .hero-h1 { font-size: 34px; margin-bottom: 16px; }
+      .hero-p { font-size: 16px; margin-bottom: 32px; }
     }
 
     /* ── 2. TRANSFORMATION STORY ── */

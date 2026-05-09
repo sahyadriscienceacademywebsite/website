@@ -48,7 +48,7 @@ function setupNavScrollBehavior() {
   let ticking = false;
 
   function updateOnScroll() {
-    const y = window.scrollY;
+    const y = window.pageYOffset;
 
     if (navbar) {
       navbar.classList.toggle("scrolled", y > 40);
@@ -56,14 +56,18 @@ function setupNavScrollBehavior() {
 
     if (sectionLinks.length && sections.length) {
       let current = "";
+      // Use a slightly larger buffer for better UX
       for (let i = 0; i < sections.length; i += 1) {
-        if (y >= sections[i].offsetTop - 120) {
+        // Cache offsetTop or use a more efficient way if sections are static
+        const sectionTop = sections[i].offsetTop;
+        if (y >= sectionTop - 150) {
           current = sections[i].id;
         }
       }
 
       sectionLinks.forEach((link) => {
-        link.classList.toggle("active", link.getAttribute("href") === `#${current}`);
+        const linkHref = link.getAttribute("href");
+        link.classList.toggle("active", linkHref === `#${current}`);
       });
     }
 
@@ -244,11 +248,18 @@ function injectFloatingButtons() {
     });
     document.body.appendChild(btt);
 
+    let bttTicking = false;
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 400) {
-        btt.classList.add("show");
-      } else {
-        btt.classList.remove("show");
+      if (!bttTicking) {
+        window.requestAnimationFrame(() => {
+          if (window.pageYOffset > 400) {
+            btt.classList.add("show");
+          } else {
+            btt.classList.remove("show");
+          }
+          bttTicking = false;
+        });
+        bttTicking = true;
       }
     }, { passive: true });
   }
