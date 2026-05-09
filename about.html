@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>About Us — Sahyadri Science Academy | Pune's Premium Coaching Institute</title>
+  <meta name="description" content="Experience the 13-year legacy of Sahyadri Science Academy — Pune's most trusted coaching institute for JEE, NEET, MHT-CET, and board exams." />
+  <link rel="canonical" href="https://sahyadriscienceacademy.com/about.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sahyadriscienceacademy.com/about.html" />
+  <meta property="og:title" content="About Us — Sahyadri Science Academy | Pune's Premium Coaching Institute" />
+  <meta property="og:description" content="Experience the 13-year legacy of Sahyadri Science Academy. Structured coaching from foundation to elite competitive ranks." />
+  <meta property="og:image" content="https://sahyadriscienceacademy.com/assets/sahyadri-logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About — Sahyadri Science Academy" />
+  <meta name="twitter:description" content="13+ years of academic excellence. JEE, NEET, MHT-CET, Board coaching in Pune." />
+  <meta name="keywords" content="about Sahyadri Science Academy, coaching institute Pune, best coaching Pune, JEE NEET coaching history Pune" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Sahyadri Science Academy" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* ════════════════════════════════════════════════
+       ULTRA-PREMIUM ABOUT PAGE REDESIGN
+    ════════════════════════════════════════════════ */
+    :root {
+      --p-navy: #0F172A;
+      --p-blue: #2563EB;
+      --p-orange: #F97316;
+      --p-orange-glow: rgba(249, 115, 22, 0.5);
+      --p-bg-soft: #F8FAFF;
+      --p-text: #334155;
+      --p-text-light: #64748B;
+      --p-glass: rgba(255, 255, 255, 0.8);
+      --p-border: rgba(226, 232, 240, 0.8);
+      --p-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.05);
+      --p-shadow-hover: 0 40px 80px -15px rgba(15, 23, 42, 0.1);
+      --p-font: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      font-family: var(--p-font);
+      color: var(--p-navy);
+      background-color: #fff;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* ── TYPOGRAPHY ── */
+    h1, h2, h3, h4 {
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+
+    .txt-orange { color: var(--p-orange); }
+    .txt-gradient {
+      background: linear-gradient(135deg, var(--p-navy) 0%, var(--p-blue) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* ── ANIMATIONS ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── REUSABLE ── */
+    .section-p { padding: 100px 0; position: relative; }
+    .container-p { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    
+    .blur-shape {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(100px);
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.4;
+    }
+
+    .tag-premium {
+      display: inline-block;
+      padding: 8px 20px;
+      background: rgba(37, 99, 235, 0.05);
+      border: 1px solid rgba(37, 99, 235, 0.1);
+      border-radius: 99px;
+      color: var(--p-blue);
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 24px;
+    }
+
+    /* ── 1. HERO (SPLIT LAYOUT - ENHANCED) ── */
+    .about-hero {
+      background: linear-gradient(
+        135deg,
+        #0f2a5a 0%,
+        #1e3a8a 50%,
+        #2563eb 100%
+      );
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 100px 0;
+    }
+
+    .about-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        90deg,
+        rgba(15,42,90,0.95) 0%,
+        rgba(15,42,90,0.8) 50%,
+        rgba(15,42,90,0.4) 100%
+      );
+      z-index: 1;
+    }
+
+    .about-hero h1, 
+    .about-hero h2, 
+    .about-hero p, 
+    .about-hero .hero-h1, 
+    .about-hero .hero-p {
+      color: white;
+      position: relative;
+      z-index: 2;
+    }
+
+    .about-hero p, 
+    .about-hero .hero-p {
+      color: rgba(255,255,255,0.8);
+    }
+
+    .about-hero .highlight, 
+    .about-hero .txt-orange, 
+    .about-hero .txt-orange-grad {
+      color: #ff7a00 !important;
+      -webkit-text-fill-color: #ff7a00 !important;
+      background: none !important;
+    }
+
+    .hero-glow-bg {
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-split {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 80px;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 620px;
+      animation: fadeInFromLeft 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      background: #fff;
+      border-radius: 99px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      border: 1px solid rgba(37, 99, 235, 0.1);
+      margin-bottom: 30px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--p-blue);
+    }
+
+    .badge-dot { width: 8px; height: 8px; background: var(--p-orange); border-radius: 50%; animation: pulse-orange 2s infinite; }
+
+    @keyframes pulse-orange {
+      0% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.4); }
+      70% { box-shadow: 0 0 0 10px rgba(249, 115, 22, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0); }
+    }
+    
+    .hero-h1 {
+      font-size: clamp(44px, 5vw, 72px);
+      font-weight: 800;
+      line-height: 1.05;
+      margin-bottom: 24px;
+      color: var(--p-navy);
+    }
+
+    .txt-orange-grad {
+      background: linear-gradient(135deg, #FF6B00 0%, #FF8C42 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-accent-line {
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(to right, var(--p-orange), transparent);
+      border-radius: 2px;
+      margin-bottom: 32px;
+    }
+
+    .hero-p {
+      font-size: clamp(18px, 1.5vw, 21px);
+      color: #6B7280;
+      line-height: 1.8;
+      margin-bottom: 48px;
+    }
+
+    .btn-impact {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 45px;
+      background: linear-gradient(135deg, #FF6B00 0%, #F97316 100%);
+      color: #fff !important;
+      border-radius: 16px;
+      font-weight: 800;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      box-shadow: 0 15px 30px rgba(249, 115, 22, 0.25);
+      border: none;
+      text-decoration: none;
+      position: relative;
+      z-index: 3;
+    }
+
+    .btn-impact:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 25px 50px rgba(249, 115, 22, 0.4);
+      color: #fff !important;
+    }
+
+    @media (max-width: 768px) {
+      .btn-impact {
+        width: 100%;
+        padding: 16px 30px;
+        font-size: 15px;
+      }
+    }
+
+    /* LAYERED IMAGE EFFECT */
+    .hero-visual-wrap {
+      position: relative;
+      animation: fadeInFromRight 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    }
+
+    .hero-image-layer-bg {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 100%;
+      height: 100%;
+      background: rgba(37, 99, 235, 0.05);
+      border-radius: 24px;
+      z-index: 1;
+    }
+
+    .hero-image-glow {
+      position: absolute;
+      bottom: -40px;
+      right: -40px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(249, 115, 22, 0.12) 0%, transparent 70%);
+      filter: blur(40px);
+      z-index: 0;
+    }
+
+    .hero-image-box {
+      position: relative;
+      width: 100%;
+      height: 620px;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 40px 100px -20px rgba(15, 23, 42, 0.2);
+      z-index: 2;
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .hero-image-box:hover {
+      transform: scale(1.03) translateY(-10px);
+      box-shadow: 0 60px 120px -25px rgba(15, 23, 42, 0.25);
+    }
+
+    .hero-image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .hero-image-box:hover img {
+      transform: scale(1.1);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15, 23, 42, 0.4) 0%, transparent 40%);
+      pointer-events: none;
+    }
+
+    @keyframes fadeInFromLeft {
+      from { opacity: 0; transform: translateX(-40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeInFromRight {
+      from { opacity: 0; transform: translateX(40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @media (max-width: 992px) {
+      .about-hero { padding: 60px 0; min-height: auto; }
+      .hero-split { grid-template-columns: 1fr; gap: 60px; }
+      .hero-content { max-width: 100%; text-align: center; display: flex; flex-direction: column; align-items: center; }
+      .hero-image-box { height: 450px; }
+      .hero-image-layer-bg { display: none; }
+    }
+
+    /* ── 2. TRANSFORMATION STORY ── */
+    .story-section { background: #fff; }
+    
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .story-visual {
+      position: relative;
+      padding: 40px;
+    }
+
+    .story-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      position: relative;
+    }
+
+    .story-timeline::before {
+      content: '';
+      position: absolute;
+      left: 31px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--p-orange), var(--p-blue), #E2E8F0);
+    }
+
+    .timeline-item {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      position: relative;
+      z-index: 2;
+    }
+
+    .t-dot {
+      width: 64px;
+      height: 64px;
+      background: #fff;
+      border: 4px solid var(--p-orange);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: var(--p-orange);
+      flex-shrink: 0;
+      box-shadow: 0 10px 20px rgba(249, 115, 22, 0.15);
+    }
+
+    .timeline-item:nth-child(2) .t-dot { border-color: var(--p-blue); color: var(--p-blue); box-shadow: 0 10px 20px rgba(37, 99, 235, 0.15); }
+    .timeline-item:nth-child(3) .t-dot { border-color: var(--p-navy); color: var(--p-navy); box-shadow: 0 10px 20px rgba(15, 23, 42, 0.15); }
+
+    .t-content h4 { font-size: 24px; margin-bottom: 8px; }
+    .t-content p { color: var(--p-text-light); }
+
+    /* ── 3. OUR DIFFERENCE (GLASS GRID) ── */
+    /* ── 3. SYSTEM FLOW (WHY WE LEAD) ── */
+    .system-section {
+      background: linear-gradient(180deg, #081226 0%, #0B1C3D 100%);
+      color: #fff;
+      padding: 100px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .system-bg-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(249, 115, 22, 0.08) 0%, transparent 70%);
+      top: -200px;
+      right: -100px;
+      pointer-events: none;
+    }
+
+    .system-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 100px;
+      position: relative;
+      padding: 0 40px;
+    }
+
+    .system-line {
+      position: absolute;
+      top: 50px;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.1);
+      z-index: 1;
+    }
+
+    .system-line-progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+      background: linear-gradient(to right, var(--p-orange), var(--p-blue));
+      transition: width 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .system-node {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .node-circle {
+      width: 100px;
+      height: 100px;
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      color: #fff;
+    }
+
+    .system-node:hover .node-circle {
+      transform: scale(1.15) translateY(-10px);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--p-orange);
+      box-shadow: 0 0 40px rgba(249, 115, 22, 0.3);
+    }
+
+    .node-highlight .node-circle {
+      width: 120px;
+      height: 120px;
+      background: rgba(249, 115, 22, 0.05);
+      border: 2px solid var(--p-orange);
+      box-shadow: 0 0 30px rgba(249, 115, 22, 0.2);
+    }
+
+    .node-title { font-weight: 800; font-size: 22px; margin-bottom: 12px; }
+    .node-desc { font-size: 15px; color: rgba(255, 255, 255, 0.6); max-width: 200px; line-height: 1.4; }
+
+    @media (max-width: 992px) {
+      .system-container { flex-direction: column; gap: 60px; padding: 0; align-items: flex-start; text-align: left; }
+      .system-line { left: 50px; top: 0; bottom: 0; width: 2px; height: 100%; right: auto; }
+      .system-node { flex-direction: row; gap: 30px; text-align: left; }
+      .node-circle { margin-bottom: 0; flex-shrink: 0; }
+      .node-desc { max-width: 100%; }
+      .node-highlight .node-circle { width: 100px; height: 100px; }
+    }
+
+    /* ── 2.5 VISION & MISSION (MOCKUP EXACT MATCH) ── */
+    .vm-section-new {
+      background-color: #051124;
+      position: relative;
+      overflow: hidden;
+      padding: 120px 0;
+    }
+
+    .vm-bg-glow-orange {
+      position: absolute;
+      top: 10%;
+      left: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(255, 122, 0, 0.12) 0%, transparent 70%);
+      filter: blur(60px);
+      z-index: 0;
+    }
+
+    .vm-bg-glow-blue {
+      position: absolute;
+      bottom: -10%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
+      filter: blur(60px);
+      z-index: 0;
+    }
+
+    .vm-dots {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      z-index: 0;
+      opacity: 0.8;
+    }
+
+    .vm-pill {
+      display: inline-block;
+      padding: 6px 20px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 99px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 24px;
+    }
+
+    .vm-card-glass {
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 30px;
+      padding: 60px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      height: 100%;
+    }
+
+    .vm-card-glass:hover {
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(255, 255, 255, 0.15);
+      transform: translateY(-10px);
+      box-shadow: 0 40px 100px rgba(0, 0, 0, 0.3);
+    }
+
+    .vm-icon-circle {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 40px;
+      z-index: 2;
+    }
+
+    .vm-icon-circle.orange {
+      background: radial-gradient(circle, rgba(255, 122, 0, 0.2) 0%, rgba(255, 122, 0, 0.1) 100%);
+      border: 1px solid rgba(255, 122, 0, 0.2);
+      color: #ff7a00;
+      box-shadow: 0 0 30px rgba(255, 122, 0, 0.2);
+    }
+
+    .vm-icon-circle.blue {
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.2) 0%, rgba(37, 99, 235, 0.1) 100%);
+      border: 1px solid rgba(37, 99, 235, 0.2);
+      color: #3b82f6;
+      box-shadow: 0 0 30px rgba(37, 99, 235, 0.2);
+    }
+
+    .vm-label {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .vm-line {
+      height: 2px;
+      width: 40px;
+      border-radius: 2px;
+    }
+
+    .vm-h3 {
+      font-size: 42px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 24px;
+      line-height: 1.1;
+    }
+
+    .vm-p {
+      font-size: 17px;
+      color: #94a3b8;
+      line-height: 1.7;
+      max-width: 420px;
+      margin-bottom: 40px;
+    }
+
+    .vm-footer-text {
+      font-size: 15px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: #94a3b8;
+    }
+
+    .vm-footer-text span {
+      color: #ff7a00;
+    }
+
+    .vm-footer-text.blue span {
+      color: #3b82f6;
+    }
+
+    .vm-mountain-svg {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 70%;
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .vm-radar-svg {
+      position: absolute;
+      bottom: -40px;
+      right: -40px;
+      width: 250px;
+      height: 250px;
+      opacity: 0.3;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    @keyframes radar-pulse {
+      0% { transform: scale(1); opacity: 0.3; }
+      50% { transform: scale(1.1); opacity: 0.5; }
+      100% { transform: scale(1); opacity: 0.3; }
+    }
+
+    .radar-circle {
+      animation: radar-pulse 4s infinite ease-in-out;
+      transform-origin: center;
+    }
+
+    @media (max-width: 768px) {
+      .vm-card-glass { padding: 40px; }
+      .vm-h3 { font-size: 32px; }
+    }
+
+    /* ── 3.0 WHY WE LEAD (SAAS MOCKUP EXACT MATCH) ── */
+    .lead-section {
+      background: #051124;
+      position: relative;
+      overflow: hidden;
+      padding: 120px 0;
+    }
+
+    .lead-bg-glow-orange {
+      position: absolute;
+      top: -10%;
+      left: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(255, 122, 0, 0.1) 0%, transparent 70%);
+      filter: blur(80px);
+      z-index: 0;
+    }
+
+    .lead-bg-glow-blue {
+      position: absolute;
+      top: 20%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
+      filter: blur(80px);
+      z-index: 0;
+    }
+
+    .lead-dots {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 40px 40px;
+      z-index: 0;
+    }
+
+    .edge-pill {
+      display: inline-block;
+      padding: 6px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: transparent;
+      border-radius: 99px;
+      color: #94a3b8;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 24px;
+    }
+
+    .process-line-wrap {
+      position: relative;
+      margin: 80px 0;
+      z-index: 2;
+    }
+
+    .process-svg-line {
+      position: absolute;
+      top: 36px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      z-index: 0;
+    }
+
+    .node-circle-wrap {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+      z-index: 2;
+      transition: all 0.5s ease;
+      margin: 0 auto 20px;
+    }
+
+    .node-circle-wrap.active {
+      background: radial-gradient(circle, rgba(255, 122, 0, 0.2) 0%, transparent 70%);
+      border-color: rgba(255, 122, 0, 0.4);
+      color: #ff7a00;
+      box-shadow: 0 0 30px rgba(255, 122, 0, 0.2);
+    }
+
+    .node-circle-wrap.blue {
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
+      border-color: rgba(37, 99, 235, 0.3);
+      color: #3b82f6;
+    }
+
+    .process-node:hover .node-circle-wrap {
+      transform: scale(1.1);
+      border-color: #fff;
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+    }
+
+    .stats-glass-panel {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 30px;
+      padding: 60px;
+      margin-top: 100px;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 40px 100px rgba(0, 0, 0, 0.3);
+    }
+
+    .stat-divider {
+      width: 1px;
+      height: 80px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .stat-num {
+      font-size: 64px;
+      font-weight: 800;
+      color: #ff7a00;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #94a3b8;
+      margin-bottom: 8px;
+    }
+
+    .stat-desc {
+      font-size: 13px;
+      color: #64748b;
+    }
+
+    @media (max-width: 768px) {
+      .process-svg-line { display: none; }
+      .process-line-wrap { flex-direction: column; gap: 40px; margin: 40px 0; }
+      .stats-glass-panel { padding: 40px 20px; flex-direction: column; gap: 60px; }
+      .stat-divider { width: 80%; height: 1px; margin: 0 auto; }
+      .stat-num { font-size: 48px; }
+    }
+    
+    .vm-card.mission-side .vm-accent-label { color: var(--p-orange); }
+
+    .vm-card:hover .vm-accent-label {
+      transform: translateX(5px);
+    }
+
+    @media (max-width: 992px) {
+      .vm-grid { grid-template-columns: 1fr; gap: 30px; }
+      .vm-card { padding: 40px 30px; }
+    }
+
+    /* ── 4. RESULTS / PROOF (DARK) ── */
+    .proof-section {
+      background: linear-gradient(180deg, #0B1C3D 0%, #0F172A 100%);
+      color: #fff;
+      overflow: hidden;
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .proof-item { position: relative; }
+
+    .proof-num {
+      font-size: clamp(80px, 12vw, 120px);
+      font-weight: 900;
+      background: linear-gradient(135deg, #FF6B00 0%, #F97316 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: block;
+      line-height: 0.9;
+      margin-bottom: 15px;
+      filter: drop-shadow(0 10px 20px rgba(249, 115, 22, 0.2));
+    }
+
+    .proof-lbl {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* ── 6. PROGRAM JOURNEY (ZIG-ZAG) ── */
+    .journey-section {
+      background: linear-gradient(180deg, #0F172A 0%, #ffffff 15%, #f8fafc 100%);
+      padding: 60px 0;
+      position: relative;
+    }
+
+    .journey-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    .journey-row:nth-child(even) { direction: rtl; }
+    .journey-row:nth-child(even) .j-content { direction: ltr; }
+
+    .j-img-wrap {
+      position: relative;
+      border-radius: 40px;
+      overflow: hidden;
+      box-shadow: var(--p-shadow-hover);
+      aspect-ratio: 16 / 9;
+      height: 320px;
+    }
+
+    .j-img-wrap::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15, 23, 42, 0.3) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .j-img-wrap img { 
+      width: 100%; 
+      height: 100%;
+      display: block; 
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(1.08) contrast(1.05);
+      position: relative;
+      z-index: 1;
+    }
+
+    .j-content {
+      max-width: 500px;
+    }
+
+    .j-content h3 { font-size: clamp(28px, 4vw, 42px); margin-bottom: 16px; }
+    .j-content p { font-size: 18px; color: var(--p-text-light); line-height: 1.6; }
+
+    /* ── 7. FINAL CLOSING (PREMIUM DARK) ── */
+    .closing-section {
+      background: linear-gradient(180deg, #F8FAFF 0%, #0B1C3D 15%, #132A5E 100%);
+      color: #fff;
+      padding: 120px 0;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .closing-glow {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, transparent 70%);
+      bottom: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      filter: blur(60px);
+      pointer-events: none;
+    }
+
+    .closing-label {
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 24px;
+      display: block;
+    }
+
+    .closing-h2 {
+      font-size: clamp(40px, 6vw, 72px);
+      margin-bottom: 24px;
+      line-height: 1.1;
+    }
+
+    .txt-orange-glow {
+      background: linear-gradient(135deg, #FF6B00 0%, #FF8C42 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 20px rgba(249, 115, 22, 0.3));
+    }
+
+    .closing-p {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    .closing-trust {
+      font-weight: 700;
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 60px;
+      display: block;
+    }
+
+    .closing-stats-strip {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 60px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cs-item { text-align: center; }
+    .cs-num { font-weight: 800; font-size: 24px; color: var(--p-orange); display: block; }
+    .cs-lbl { font-size: 14px; color: rgba(255, 255, 255, 0.5); text-transform: uppercase; letter-spacing: 1px; }
+
+    .closing-actions {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .btn-closing-primary {
+      padding: 22px 45px;
+      background: linear-gradient(135deg, #FF6B00 0%, #F97316 100%);
+      color: #fff;
+      border-radius: 16px;
+      font-weight: 800;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      box-shadow: 0 15px 30px rgba(249, 115, 22, 0.3);
+    }
+
+    .btn-closing-secondary {
+      padding: 22px 45px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border-radius: 16px;
+      font-weight: 800;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .btn-closing-primary:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 25px 50px rgba(249, 115, 22, 0.4);
+    }
+
+    .btn-closing-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-5px);
+    }
+
+    @media (max-width: 768px) {
+      .closing-actions { flex-direction: column; align-items: stretch; }
+      .closing-stats-strip { flex-direction: column; gap: 20px; border-bottom: none; }
+      .btn-closing-primary, .btn-closing-secondary { width: 100%; text-align: center; }
+    }
+
+    /* ── 6.5 GALLERY SLIDESHOW ── */
+    .gallery-section {
+      background: #F8FAFF;
+      padding: 100px 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .gallery-container {
+      position: relative;
+      max-width: 1200px;
+      margin: 60px auto 0;
+      border-radius: 40px;
+      overflow: hidden;
+      box-shadow: 0 40px 100px rgba(15, 23, 42, 0.15);
+    }
+
+    .gallery-track {
+      display: flex;
+      transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .gallery-slide {
+      min-width: 100%;
+      height: 650px;
+      position: relative;
+    }
+
+    .gallery-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-nav {
+      position: absolute;
+      top: 50%;
+      left: 30px;
+      right: 30px;
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: space-between;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .gallery-arrow {
+      width: 60px;
+      height: 60px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      cursor: pointer;
+      pointer-events: auto;
+      transition: all 0.3s;
+    }
+
+    .gallery-arrow:hover {
+      background: var(--p-orange);
+      border-color: var(--p-orange);
+      transform: scale(1.1);
+    }
+
+    .gallery-dots {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 10;
+    }
+
+    .g-dot {
+      width: 8px;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .g-dot.active {
+      width: 30px;
+      background: #fff;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-slide { height: 400px; }
+      .gallery-arrow { width: 45px; height: 45px; }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 992px) {
+      .story-grid, .journey-row, .proof-grid, .flow-wrap { grid-template-columns: 1fr; display: block; }
+      .journey-row { margin-bottom: 60px; gap: 40px; }
+      .journey-row:nth-child(even) { direction: ltr; }
+      .flow-wrap { margin-top: 60px; }
+      .flow-step { margin-bottom: 60px; }
+      .flow-line { display: none; }
+      .proof-item { margin-bottom: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══════════════ TOP ANNOUNCEMENT STRIP ══════════════ -->
+  <div class="top-strip">
+    <div class="strip-ticker">
+      <div class="ticker-track" id="tickerTrack">
+        <span>🎉 New Batch Starting April 2026 — Limited Seats!</span>
+        <span>📢 JEE, NEET, MHT-CET, NDA, UPSC & other entrance exams — Enroll Now</span>
+        <span>🏆 100% Results in 10th & 12th Board 2025!</span>
+        <span>📞 Call us: +91 79272 32781</span>
+        <span>📍 Shewalewadi, Hadapsar, Pune — 412307</span>
+        <span>⭐ Rated 4.9/5 by 230+ Students & Parents</span>
+        <span>🎉 New Batch Starting April 2026 — Limited Seats!</span>
+        <span>📢 JEE, NEET, MHT-CET, NDA, UPSC & other entrance exams — Enroll Now</span>
+        <span>🏆 100% Results in 10th & 12th Board 2025!</span>
+        <span>📞 Call us: +91 79272 32781</span>
+        <span>📍 Shewalewadi, Hadapsar, Pune — 412307</span>
+        <span>⭐ Rated 4.9/5 by 230+ Students & Parents</span>
+      </div>
+    </div>
+    <div class="strip-right">
+      <a href="tel:+917927232781">📞 +91 79272 32781</a>
+    </div>
+  </div>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/sahyadri-logo.png" alt="Sahyadri Science Academy Logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-name">Sahyadri <span class="brand-accent">Science</span> Academy</span>
+          <span class="logo-tagline">WE MAKE CHAMPIONS</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="course.html" class="nav-link">Courses</a>
+        <a href="founder.html" class="nav-link">Founder &amp; Team</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="results.html" class="nav-link">Results</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Removed login button -->
+        <a href="#" onclick="openLeadPopup(event)" class="btn-enroll-nav">Enroll Now</a>
+        <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO -->
+    <section class="about-hero">
+      <div class="hero-glow-bg"></div>
+      <div class="blur-shape" style="width: 400px; height: 400px; background: var(--p-orange); bottom: -100px; left: -100px; opacity: 0.05;"></div>
+      
+      <div class="container-p">
+        <div class="hero-split">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              Trusted by 5500+ Students
+            </div>
+            <h1 class="hero-h1">Redefining the <br/><span class="txt-orange-grad">Science of Success.</span></h1>
+            <div class="hero-accent-line"></div>
+            <p class="hero-p">Sahyadri Science Academy is more than a coaching center. We are a structured ecosystem designed to bridge the gap between hard work and elite ranks.</p>
+            <div class="hero-cta">
+              <a href="#" onclick="openLeadPopup(event)" class="btn-impact">Begin Your Journey</a>
+            </div>
+          </div>
+          
+          <div class="hero-visual-wrap">
+            <div class="hero-image-layer-bg"></div>
+            <div class="hero-image-glow"></div>
+            <div class="hero-image-box">
+              <img src="assets/classroom-hero.jpg" alt="Sahyadri Science Academy Classroom" />
+              <div class="hero-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 6.5 GALLERY SECTION (Moved to 2nd position) -->
+    <section class="section-p gallery-section">
+      <div class="container-p">
+        <div class="section-header reveal" style="text-align: center;">
+          <span class="tag-premium">Life at Academy</span>
+          <h2 style="font-size: 48px;">Campus <span class="txt-orange">Glimpses.</span></h2>
+        </div>
+        
+        <div class="gallery-container reveal">
+          <div class="gallery-track" id="galleryTrack">
+            <!-- Gallery slides will be loaded dynamically from data/gallery.json -->
+          </div>
+          
+          <div class="gallery-nav">
+            <div class="gallery-arrow" id="prevBtn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            </div>
+            <div class="gallery-arrow" id="nextBtn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
+          </div>
+          
+          <div class="gallery-dots" id="galleryDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. TRANSFORMATION STORY -->
+    <section class="section-p story-section">
+      <div class="container-p">
+        <div class="story-grid">
+          <div class="story-text reveal">
+            <span class="tag-premium" style="background: rgba(249, 115, 22, 0.05); color: var(--p-orange); border-color: rgba(249, 115, 22, 0.1);">Our Transformation</span>
+            <h2 style="font-size: clamp(40px, 5vw, 56px); margin-bottom: 32px; line-height: 1.1;">A Legacy of <br/><span class="txt-orange">Exponential Growth.</span></h2>
+            <p style="font-size: 19px; color: var(--p-text-light); margin-bottom: 40px; max-width: 500px;">What began as a vision to simplify science in 2015 has evolved into a powerhouse of result-oriented education. Our journey is measured not in years, but in the success of our students.</p>
+          </div>
+          <div class="story-visual reveal">
+            <div class="story-timeline">
+              <div class="timeline-item">
+                <div class="t-dot">15</div>
+                <div class="t-content">
+                  <h4>The Inception (2015)</h4>
+                  <p>Started with 20 students in a small room, driven by pure academic passion.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="t-dot">20</div>
+                <div class="t-content">
+                  <h4>The Expansion (2020)</h4>
+                  <p>Reached 1000+ students and multiple branches across Pune.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="t-dot">26</div>
+                <div class="t-content">
+                  <h4>The Standard (Present)</h4>
+                  <p>5500+ successful alumni and a reputation for pure conceptual mastery.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.5 VISION & MISSION (MOCKUP EXACT MATCH) -->
+    <section class="vm-section-new" id="principles">
+      <div class="vm-bg-glow-orange"></div>
+      <div class="vm-bg-glow-blue"></div>
+      <div class="vm-dots"></div>
+
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-20 reveal">
+          <div class="vm-pill">THE CORE</div>
+          <h2 class="text-5xl md:text-7xl font-extrabold text-white mb-6">Vision & <span class="text-orange-500">Mission.</span></h2>
+          <div class="w-24 h-1 bg-blue-600 mx-auto mb-6 flex items-center justify-center">
+            <div class="w-2 h-2 bg-orange-500 rounded-full"></div>
+          </div>
+          <p class="text-slate-400 text-lg max-w-2xl mx-auto">Our purpose drives everything we do. We are committed to shaping disciplined, confident, and future-ready achievers.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Vision Panel -->
+          <div class="reveal">
+            <div class="vm-card-glass">
+              <div class="vm-icon-circle orange">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <div class="vm-label text-orange-500">
+                FUTURE FOCUSED <div class="vm-line bg-orange-500"></div>
+              </div>
+              <h3 class="vm-h3">Our Vision</h3>
+              <p class="vm-p">To become Pune's most trusted coaching institute by building students who think deeply, solve confidently, and excel beyond exams.</p>
+              
+              <div class="mt-auto">
+                <div class="vm-footer-text">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff7a00" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                  Building a legacy of <span>excellence and trust.</span>
+                </div>
+              </div>
+
+              <!-- Mountain Illustration -->
+              <svg class="vm-mountain-svg" viewBox="0 0 400 200" fill="none">
+                <path d="M0 200L150 50L250 120L350 20L400 100V200H0Z" fill="url(#mountainGrad)" opacity="0.4"/>
+                <circle cx="350" cy="20" r="4" fill="#ff7a00" class="animate-pulse"/>
+                <defs>
+                  <linearGradient id="mountainGrad" x1="200" y1="50" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#ff7a00" stop-opacity="0.5"/>
+                    <stop offset="1" stop-color="#ff7a00" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Mission Panel -->
+          <div class="reveal" style="transition-delay: 0.2s;">
+            <div class="vm-card-glass">
+              <div class="vm-icon-circle blue">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              </div>
+              <div class="vm-label text-blue-500">
+                OUR ACTION PLAN <div class="vm-line bg-blue-500"></div>
+              </div>
+              <h3 class="vm-h3">Our Mission</h3>
+              <p class="vm-p">To deliver structured, concept-based education through expert mentorship, regular testing, and personalized guidance — ensuring every student achieves their highest potential.</p>
+              
+              <div class="mt-auto">
+                <div class="vm-footer-text blue">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                  Empowering today's learners <span>for tomorrow's challenges.</span>
+                </div>
+              </div>
+
+              <!-- Radar Illustration -->
+              <svg class="vm-radar-svg" viewBox="0 0 200 200">
+                <circle class="radar-circle" cx="150" cy="150" r="20" stroke="#3b82f6" stroke-width="1" fill="none"/>
+                <circle class="radar-circle" cx="150" cy="150" r="40" stroke="#3b82f6" stroke-width="1" fill="none" style="animation-delay: 1s;"/>
+                <circle class="radar-circle" cx="150" cy="150" r="60" stroke="#3b82f6" stroke-width="1" fill="none" style="animation-delay: 2s;"/>
+                <circle cx="150" cy="150" r="4" fill="#3b82f6"/>
+                <line x1="150" y1="150" x2="150" y2="80" stroke="#3b82f6" stroke-width="2" stroke-linecap="round">
+                  <animateTransform attributeName="transform" type="rotate" from="0 150 150" to="360 150 150" dur="5s" repeatCount="indefinite"/>
+                </line>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.0 WHY WE LEAD (MOCKUP EXACT MATCH) -->
+    <section class="lead-section" id="why-we-lead">
+      <div class="lead-bg-glow-orange"></div>
+      <div class="lead-bg-glow-blue"></div>
+      <div class="lead-dots"></div>
+
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-20 reveal">
+          <div class="edge-pill">OUR EDGE</div>
+          <h2 class="text-5xl md:text-6xl font-extrabold text-white mb-6">Why We <span class="text-orange-500">Lead.</span></h2>
+          <p class="text-slate-400 text-lg max-w-xl mx-auto">We combine the right strategy, resources, and technology to help students stay ahead of the curve.</p>
+        </div>
+
+        <!-- Process Timeline -->
+        <div class="process-line-wrap reveal">
+          <svg class="process-svg-line" preserveAspectRatio="none" viewBox="0 0 1000 2">
+            <defs>
+              <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#ff7a00" />
+                <stop offset="100%" stop-color="#3b82f6" />
+              </linearGradient>
+            </defs>
+            <line x1="0" y1="1" x2="1000" y2="1" stroke="url(#lineGrad)" stroke-width="2" stroke-dasharray="8,8" />
+            <circle cx="250" cy="1" r="3" fill="#ff7a00" class="animate-pulse" />
+            <circle cx="500" cy="1" r="3" fill="#3b82f6" class="animate-pulse" />
+            <circle cx="750" cy="1" r="3" fill="#3b82f6" class="animate-pulse" />
+          </svg>
+
+          <div class="flex flex-wrap justify-between relative z-10">
+            <div class="process-node text-center w-full md:w-1/4 mb-10 md:mb-0">
+              <div class="node-circle-wrap active">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+              </div>
+              <h4 class="text-white font-bold mb-2">Concept First</h4>
+              <p class="text-slate-500 text-sm">Deep logic before complex problems.</p>
+            </div>
+
+            <div class="process-node text-center w-full md:w-1/4 mb-10 md:mb-0">
+              <div class="node-circle-wrap blue">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <h4 class="text-white font-bold mb-2">Elite Material</h4>
+              <p class="text-slate-500 text-sm">Expert-curated academic archives.</p>
+            </div>
+
+            <div class="process-node text-center w-full md:w-1/4 mb-10 md:mb-0">
+              <div class="node-circle-wrap blue">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <h4 class="text-white font-bold mb-2">Rigorous Tests</h4>
+              <p class="text-slate-500 text-sm">Weekly Sunday exam simulations.</p>
+            </div>
+
+            <div class="process-node text-center w-full md:w-1/4">
+              <div class="node-circle-wrap blue">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+              </div>
+              <h4 class="text-white font-bold mb-2">Data Analytics</h4>
+              <p class="text-slate-500 text-sm">Identifying and fixing weak points.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Glass Panel -->
+        <div class="stats-glass-panel reveal flex flex-wrap items-center justify-between">
+          <div class="text-center w-full md:w-[30%] mb-10 md:mb-0">
+            <div class="stat-num">5500+</div>
+            <div class="stat-label">Successful Alumni</div>
+            <p class="stat-desc">Empowering careers since 2015.</p>
+          </div>
+          <div class="stat-divider hidden md:block"></div>
+          <div class="text-center w-full md:w-[30%] mb-10 md:mb-0">
+            <div class="stat-num">13+</div>
+            <div class="stat-label">Years of Legacy</div>
+            <p class="stat-desc">A tradition of academic excellence.</p>
+          </div>
+          <div class="stat-divider hidden md:block"></div>
+          <div class="text-center w-full md:w-[30%]">
+            <div class="stat-num">99%</div>
+            <div class="stat-label">Success Rate</div>
+            <p class="stat-desc">Proven results in elite competitions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PROGRAM JOURNEY (ZIG-ZAG) -->
+    <section class="section-p journey-section">
+      <div class="container-p">
+        <div class="section-header reveal" style="text-align: center; margin-bottom: 40px;">
+          <span class="tag-premium">Our Programs</span>
+          <h2 style="font-size: clamp(40px, 5vw, 56px); line-height: 1.1;">Structured for <br/><span class="txt-orange">Every Level.</span></h2>
+        </div>
+
+        <div class="journey-row reveal">
+          <div class="j-img-wrap">
+            <img src="assets/foundation_roots.jpg" alt="Foundation Level Classroom Celebration" />
+          </div>
+          <div class="j-content">
+            <span class="tag-premium">Level 01</span>
+            <h3>Foundation <br/><span class="txt-orange">Roots.</span></h3>
+            <p>8th to 10th Standard. We focus on building the logical stamina required for future competitive success. It's not about the syllabus; it's about the mindset.</p>
+          </div>
+        </div>
+
+        <div class="journey-row reveal">
+          <div class="j-img-wrap">
+            <img src="assets/elite_entrance.jpg" alt="Elite Entrance Students Group" />
+          </div>
+          <div class="j-content">
+            <span class="tag-premium">Level 02</span>
+            <h3>Elite <br/><span class="txt-orange">Entrance Prep.</span></h3>
+            <p>JEE, NEET, MHT-CET, NDA. High-intensity coaching designed for ranking. Our students don't just clear exams; they dominate the merit lists.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 7. FINAL CLOSING -->
+    <section class="section-p closing-section">
+      <div class="closing-glow"></div>
+      <div class="container-p reveal">
+        <span class="closing-label">Start Your Journey</span>
+        <h2 class="closing-h2">Ready to <span class="txt-orange-glow">Build Your Future?</span></h2>
+        <p class="closing-p">Join 5500+ students achieving top ranks in JEE, NEET, MHT-CET, NDA & more. Experience the standard of pure conceptual excellence.</p>
+        
+        <div class="closing-stats-strip">
+          <div class="cs-item">
+            <span class="cs-num">5500+</span>
+            <span class="cs-lbl">Students</span>
+          </div>
+          <div class="cs-item">
+            <span class="cs-num">10+</span>
+            <span class="cs-lbl">Years Legacy</span>
+          </div>
+          <div class="cs-item">
+            <span class="cs-num">99%</span>
+            <span class="cs-lbl">Success Rate</span>
+          </div>
+        </div>
+
+        <span class="closing-trust">⭐ Rated 4.9 by 230+ Students & Parents</span>
+
+        <div class="closing-actions">
+          <a href="#" onclick="openLeadPopup(event)" class="btn-closing-primary">Enroll Now</a>
+          <a href="#" onclick="openLeadPopup(event)" class="btn-closing-secondary">Book Free Demo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/sahyadri-logo.png" alt="Sahyadri Science Academy Logo" class="logo-img" />
+            <span>Sahyadri Science Academy</span>
+          </div>
+          <p>Pune's trusted coaching institute for 5th–12th standard, JEE, NEET, MHT-CET, NDA, UPSC & other entrance
+            exams since 2014.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/sahyadri_science_academy_pune?utm_source=qr&igsh=MWV1azR0dThqZ2Rndw==" target="_blank" rel="noopener noreferrer" class="social-btn">📷 Instagram</a>
+            <a href="https://youtube.com/@sahyadriclasses?si=gIN96G35bPlXyXGb" target="_blank" rel="noopener noreferrer" class="social-btn">▶️ YouTube</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <a href="index.html#primary">5th – 7th Standard</a>
+          <a href="index.html#secondary">8th – 10th Standard</a>
+          <a href="index.html#hsc">11th – 12th Science</a>
+          <a href="index.html#competitive">JEE, NEET, MHT-CET, NDA & UPSC</a>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="about.html">About Us</a>
+          <a href="results.html">Our Results</a>
+          <a href="news.html">News & Updates</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>📍 01, Gajtara Apartment,<br />Solapur-Pune Hwy,<br />Shewalewadi, Pune 412307</p>
+          <p>📞 <a href="tel:+917927232781">+91 79272 32781</a></p>
+          <p>🕐 Mon–Sat: 7AM – 9PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Sahyadri Science Academy, Pune. All rights reserved.</p>
+        <p>Built with ❤️ for academic excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const progress = document.getElementById('systemProgress');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            progress.style.width = '100%';
+          }
+        });
+      }, { threshold: 0.5 });
+
+      const systemSection = document.querySelector('.system-section');
+      if (systemSection) observer.observe(systemSection);
+
+      // Gallery Logic — Dynamic from gallery.json
+      async function initGallery() {
+        const track = document.getElementById('galleryTrack');
+        const dotsNav = document.getElementById('galleryDots');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+
+        let photos = [];
+        try {
+          const res = await fetch('data/gallery.json?t=' + Date.now());
+          const data = await res.json();
+          photos = data.photos || [];
+        } catch (e) {
+          console.error('Gallery load failed', e);
+          return;
+        }
+
+        // Build slides
+        track.innerHTML = '';
+        dotsNav.innerHTML = '';
+        photos.forEach((photo, index) => {
+          const slide = document.createElement('div');
+          slide.className = 'gallery-slide';
+          const img = document.createElement('img');
+          img.src = photo.imageUrl;
+          img.alt = photo.caption || 'Campus Life';
+          img.loading = 'lazy';
+          slide.appendChild(img);
+          track.appendChild(slide);
+
+          const dot = document.createElement('div');
+          dot.classList.add('g-dot');
+          if (index === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => goToSlide(index));
+          dotsNav.appendChild(dot);
+        });
+
+        const slides = Array.from(track.children);
+        const dots = Array.from(dotsNav.children);
+        let currentIndex = 0;
+        let autoPlayTimer;
+
+        function updateDots(index) {
+          dots.forEach(dot => dot.classList.remove('active'));
+          if (dots[index]) dots[index].classList.add('active');
+        }
+
+        function goToSlide(index) {
+          currentIndex = index;
+          if (currentIndex >= slides.length) currentIndex = 0;
+          if (currentIndex < 0) currentIndex = slides.length - 1;
+          track.style.transform = `translateX(-${currentIndex * 100}%)`;
+          updateDots(currentIndex);
+          resetAutoPlay();
+        }
+
+        function resetAutoPlay() {
+          clearInterval(autoPlayTimer);
+          autoPlayTimer = setInterval(() => goToSlide(currentIndex + 1), 5000);
+        }
+
+        nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+        prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
+        resetAutoPlay();
+      }
+
+      initGallery();
+    });
+  </script>
+</body>
+</html>
+

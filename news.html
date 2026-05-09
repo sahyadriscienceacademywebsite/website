@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News &amp; Announcements — Sahyadri Science Academy | Latest Updates</title>
+  <meta name="description" content="Stay updated with latest news, batch announcements, exam results, and study tips from Sahyadri Science Academy — Pune's leading coaching institute." />
+  <link rel="canonical" href="https://sahyadriscienceacademy.com/news.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sahyadriscienceacademy.com/news.html" />
+  <meta property="og:title" content="News & Announcements — Sahyadri Science Academy Pune" />
+  <meta property="og:description" content="Latest batch announcements, exam results, events, and study tips from Sahyadri Science Academy, Pune." />
+  <meta property="og:image" content="https://sahyadriscienceacademy.com/assets/sahyadri-logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="News — Sahyadri Science Academy" />
+  <meta name="twitter:description" content="Latest news, batch updates and events from Sahyadri Science Academy Pune." />
+  <meta name="keywords" content="Sahyadri Science Academy news, new batch Pune coaching, JEE NEET results news Pune, coaching announcements Pune" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Sahyadri Science Academy" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+
+  <style>
+    /* ══════════════════════════════════════════
+       NEWS PAGE — LAYOUT STYLES
+       Respects design DNA from index.css
+    ══════════════════════════════════════════ */
+
+    /* Page Header */
+    .news-hero {
+      background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-mid) 100%);
+      padding: 120px 0 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .news-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(249, 115, 22, 0.12), transparent);
+      pointer-events: none;
+    }
+
+    .news-hero-badge {
+      display: inline-block;
+      background: rgba(249, 115, 22, 0.15);
+      border: 1px solid rgba(249, 115, 22, 0.35);
+      color: #fb923c;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 7px 18px;
+      border-radius: 99px;
+      margin-bottom: 20px;
+    }
+
+    .news-hero h1 {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(32px, 5vw, 56px);
+      font-weight: 900;
+      color: white;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .news-hero h1 span {
+      color: var(--orange);
+    }
+
+    .news-hero p {
+      font-size: 17px;
+      color: rgba(255, 255, 255, 0.72);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.75;
+    }
+
+    /* Content Area */
+    .news-content {
+      background: var(--off-white);
+      padding: 72px 0 80px;
+    }
+
+    /* Section Label */
+    .news-section-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .news-section-label .label-icon {
+      width: 28px;
+      height: 28px;
+      background: var(--navy);
+      color: white;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    .news-section-label hr {
+      flex: 1;
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── FEATURED CARD ── */
+    .featured-card {
+      position: relative;
+      min-height: 420px;
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 60px;
+      box-shadow: var(--shadow-hover);
+      cursor: pointer;
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .featured-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .featured-card-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.6s ease;
+    }
+
+    .featured-card:hover .featured-card-bg {
+      transform: scale(1.03);
+    }
+
+    .featured-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(10, 18, 40, 0.97) 0%, rgba(10, 18, 40, 0.6) 45%, rgba(10, 18, 40, 0.05) 100%);
+    }
+
+    .featured-card-body {
+      position: relative;
+      z-index: 2;
+      padding: 40px 48px;
+      width: 100%;
+    }
+
+    .featured-pills {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .pill-featured {
+      background: rgba(249, 115, 22, 0.18);
+      border: 1px solid rgba(249, 115, 22, 0.4);
+      color: #fb923c;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 99px;
+    }
+
+    /* tag pills — colour coded */
+    .tag-pill {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 99px;
+    }
+
+    .tag-result {
+      background: rgba(22, 163, 74, 0.18);
+      color: #4ade80;
+      border: 1px solid rgba(22, 163, 74, 0.35);
+    }
+
+    .tag-event {
+      background: rgba(59, 130, 246, 0.18);
+      color: #93c5fd;
+      border: 1px solid rgba(59, 130, 246, 0.35);
+    }
+
+    .tag-admission {
+      background: rgba(249, 115, 22, 0.18);
+      color: #fdba74;
+      border: 1px solid rgba(249, 115, 22, 0.35);
+    }
+
+    .tag-announcement {
+      background: rgba(168, 85, 247, 0.18);
+      color: #c4b5fd;
+      border: 1px solid rgba(168, 85, 247, 0.35);
+    }
+
+    .tag-achievement {
+      background: rgba(234, 179, 8, 0.18);
+      color: #fde047;
+      border: 1px solid rgba(234, 179, 8, 0.35);
+    }
+
+    .tag-tips {
+      background: rgba(20, 184, 166, 0.18);
+      color: #5eead4;
+      border: 1px solid rgba(20, 184, 166, 0.35);
+    }
+
+    /* light variants for grid cards (white bg) */
+    .tag-result-light {
+      background: #dcfce7;
+      color: #15803d;
+    }
+
+    .tag-event-light {
+      background: #eff6ff;
+      color: #2563eb;
+    }
+
+    .tag-admission-light {
+      background: #fff7ed;
+      color: #ea580c;
+    }
+
+    .tag-announcement-light {
+      background: #f5f3ff;
+      color: #7c3aed;
+    }
+
+    .tag-achievement-light {
+      background: #fefce8;
+      color: #ca8a04;
+    }
+
+    .tag-tips-light {
+      background: #f0fdfa;
+      color: #0f766e;
+    }
+
+    .featured-card-body h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(22px, 3vw, 34px);
+      font-weight: 800;
+      color: white;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      max-width: 700px;
+    }
+
+    .featured-card-body p {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.7;
+      max-width: 620px;
+      margin-bottom: 16px;
+    }
+
+    .featured-date {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 500;
+    }
+
+    /* ── NEWS GRID ── */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    @media (max-width: 1023px) {
+      .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 639px) {
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Standard News Card */
+    .news-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .news-card-thumb {
+      height: 176px;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: var(--gray-light);
+    }
+
+    .news-card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .news-card:hover .news-card-thumb img {
+      transform: scale(1.06);
+    }
+
+    .news-card-body {
+      padding: 20px 22px 22px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .news-card-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 99px;
+      margin-bottom: 12px;
+      align-self: flex-start;
+    }
+
+    .news-card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.4;
+      margin-bottom: 10px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .news-card-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      flex: 1;
+      margin-bottom: 16px;
+    }
+
+    .news-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+
+    .news-card-date {
+      font-size: 12.5px;
+      color: var(--gray);
+      font-weight: 500;
+    }
+
+    .news-card-read {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--navy);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .news-card-read:hover {
+      color: var(--orange);
+    }
+
+    /* ── LOAD MORE ── */
+    .load-more-wrap {
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    #load-more-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: var(--navy);
+      border: 2px solid var(--border);
+      padding: 13px 32px;
+      border-radius: 99px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.25s;
+      box-shadow: var(--shadow-sm);
+    }
+
+    #load-more-btn:hover {
+      border-color: var(--navy);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    /* ── CTA STRIP ── */
+    .news-cta {
+      background: linear-gradient(135deg, var(--navy-dark), var(--navy-mid));
+      padding: 72px 0;
+      text-align: center;
+    }
+
+    .news-cta h2 {
+      font-size: clamp(24px, 3.5vw, 38px);
+      font-weight: 800;
+      color: white;
+      margin-bottom: 14px;
+    }
+
+    .news-cta p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 32px;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .news-cta-btns {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cta-btn-orange {
+      background: var(--orange);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all 0.25s;
+      box-shadow: 0 6px 20px rgba(249, 115, 22, 0.35);
+    }
+
+    .cta-btn-orange:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(249, 115, 22, 0.45);
+    }
+
+    .cta-btn-ghost {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all 0.25s;
+    }
+
+    .cta-btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.18);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Loading state placeholder */
+    .news-loading {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══════════════ TOP ANNOUNCEMENT STRIP ══════════════ -->
+  <div class="top-strip">
+    <div class="strip-ticker">
+      <div class="ticker-track" id="tickerTrack">
+        <span>🎉 New Batch Starting April 2026 — Limited Seats!</span>
+        <span>📢 JEE, NEET, MHT-CET, NDA, UPSC & other entrance exams — Enroll Now</span>
+        <span>🏆 100% Results in 10th & 12th Board 2025!</span>
+        <span>📞 Call us: +91 79272 32781</span>
+        <span>📍 Shewalewadi, Pune — 412307</span>
+        <span>⭐ Rated 4.9/5 by 230+ Students & Parents</span>
+        <span>🎉 New Batch Starting April 2026 — Limited Seats!</span>
+        <span>📢 JEE, NEET, MHT-CET, NDA, UPSC & other entrance exams — Enroll Now</span>
+        <span>🏆 100% Results in 10th & 12th Board 2025!</span>
+        <span>📞 Call us: +91 79272 32781</span>
+        <span>📍 Shewalewadi, Pune — 412307</span>
+        <span>⭐ Rated 4.9/5 by 230+ Students & Parents</span>
+      </div>
+    </div>
+    <div class="strip-right">
+      <a href="tel:+917927232781">📞 +91 79272 32781</a>
+    </div>
+  </div>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/sahyadri-logo.png" alt="Sahyadri Science Academy Logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-name">Sahyadri <span class="brand-accent">Science</span> Academy</span>
+          <span class="logo-tagline">WE MAKE CHAMPIONS</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="course.html" class="nav-link">Courses</a>
+        <a href="founder.html" class="nav-link">Founder &amp; Team</a>
+        <a href="news.html" class="nav-link active">News</a>
+        <a href="results.html" class="nav-link">Results</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Removed login button -->
+        <a href="#" onclick="openLeadPopup(event)" class="btn-enroll-nav">Enroll Now</a>
+        <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HEADER -->
+    <section class="news-hero">
+      <div class="container" style="position:relative;z-index:1;">
+        <div class="news-hero-badge">📰 Latest Updates</div>
+        <h1>News &amp; <span>Announcements</span></h1>
+        <p>Stay updated with the latest batch openings, exam results, study tips, and events at Sahyadri Science
+          Academy.</p>
+      </div>
+    </section>
+
+    <!-- CONTENT AREA -->
+    <section class="news-content">
+      <div class="container">
+
+        <!-- Featured Section Label -->
+        <div class="news-section-label">
+          <div class="label-icon">⭐</div>
+          <span>Featured Announcement</span>
+          <hr />
+        </div>
+
+        <!-- Featured Card — injected by JS -->
+        <div id="featured-news-container">
+          <div class="news-loading">Loading latest update…</div>
+        </div>
+
+        <!-- Grid Section Label -->
+        <div class="news-section-label" style="margin-top: 60px;">
+          <div class="label-icon">📋</div>
+          <span>Latest Updates</span>
+          <hr />
+        </div>
+
+        <!-- News Grid — injected by JS -->
+        <div class="news-grid" id="news-grid-container"></div>
+
+        <!-- Load More -->
+        <div class="load-more-wrap" id="load-more-container" style="display:none;">
+          <button id="load-more-btn">Load More ↓</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="news-cta">
+      <div class="container">
+        <h2>Don't Miss Out!</h2>
+        <p>New batches fill up fast. Contact us today to reserve your seat and get a free demo class.</p>
+        <div class="news-cta-btns">
+          <a href="#" onclick="openLeadPopup(event)" class="cta-btn-orange">Enroll Now</a>
+          <a href="contact.html" class="cta-btn-ghost">📞 Book Free Demo</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/sahyadri-logo.png" alt="Sahyadri Science Academy Logo" class="logo-img" />
+            <span>Sahyadri Science Academy</span>
+          </div>
+          <p>Pune's trusted coaching institute for 5th–12th standard, JEE, NEET, MHT-CET, NDA, UPSC & other entrance
+            exams since 2014.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/sahyadri_science_academy_pune?utm_source=qr&igsh=MWV1azR0dThqZ2Rndw==" target="_blank" rel="noopener noreferrer" class="social-btn">📷 Instagram</a>
+            <a href="https://youtube.com/@sahyadriclasses?si=gIN96G35bPlXyXGb" target="_blank" rel="noopener noreferrer" class="social-btn">▶️ YouTube</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <a href="index.html#primary">5th – 7th Standard</a>
+          <a href="index.html#secondary">8th – 10th Standard</a>
+          <a href="index.html#hsc">11th – 12th Science</a>
+          <a href="index.html#competitive">JEE, NEET, MHT-CET, NDA & UPSC</a>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="about.html">About Us</a>
+          <a href="results.html">Our Results</a>
+          <a href="news.html">News & Updates</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>📍 01, Gajtara Apartment,<br />Solapur-Pune Hwy,<br />Shewalewadi, Pune 412307</p>
+          <p>📞 <a href="tel:+917927232781">+91 79272 32781</a></p>
+          <p>🕐 Mon–Sat: 7AM – 9PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Sahyadri Science Academy, Pune. All rights reserved.</p>
+        <p>Built with ❤️ for academic excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/render-updates.js"></script>
+</body>
+
+</html>

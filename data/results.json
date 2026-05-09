@@ -1,0 +1,55 @@
+﻿{
+  "results": [
+    {
+      "id": 1,
+      "date": "2026-04-21",
+      "imageUrl": "assets/uploads/result_1.jpeg"
+    },
+    {
+      "id": 2,
+      "date": "2026-04-21",
+      "imageUrl": "assets/uploads/result_2.jpeg"
+    },
+    {
+      "id": 3,
+      "date": "2026-04-21",
+      "imageUrl": "assets/uploads/result_3.jpeg"
+    },
+    {
+      "id": 4,
+      "date": "2026-04-21",
+      "imageUrl": "assets/uploads/result_4.jpeg"
+    },
+    {
+      "id": 5,
+      "date": "2026-04-21",
+      "imageUrl": "assets/uploads/result_5.jpeg"
+    },
+    {
+      "id": 6,
+      "date": "2026-04-21",
+      "imageUrl": "assets/uploads/result_6.jpeg"
+    },
+    {
+      "id": 7,
+      "date": "2026-04-21",
+      "imageUrl": "assets/uploads/result_7.jpeg"
+    },
+    {
+      "id": 8,
+      "date": "2026-04-21",
+      "imageUrl": "assets/uploads/result_8.jpeg"
+    },
+    {
+      "id": 9,
+      "date": "2026-04-21",
+      "imageUrl": "assets/uploads/result_9.jpeg"
+    },
+    {
+      "id": 10,
+      "date": "2026-04-20",
+      "imageUrl": "assets/uploads/result_10.jpeg"
+    }
+  ]
+}
+

@@ -1,0 +1,23 @@
+{
+  "photos": [
+    { "id": 1, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.25.43%20PM.jpeg", "caption": "Campus Life" },
+    { "id": 2, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.25.49%20PM.jpeg", "caption": "Campus Life" },
+    { "id": 3, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.26.15%20PM.jpeg", "caption": "Campus Life" },
+    { "id": 4, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.26.17%20PM%20(1).jpeg", "caption": "Campus Life" },
+    { "id": 5, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.26.17%20PM.jpeg", "caption": "Campus Life" },
+    { "id": 6, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.26.19%20PM.jpeg", "caption": "Campus Life" },
+    { "id": 7, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.26.20%20PM%20(1).jpeg", "caption": "Campus Life" },
+    { "id": 8, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.26.20%20PM.jpeg", "caption": "Campus Life" },
+    { "id": 9, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.26.21%20PM.jpeg", "caption": "Campus Life" },
+    { "id": 10, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.26.22%20PM%20(1).jpeg", "caption": "Campus Life" },
+    { "id": 11, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.26.22%20PM.jpeg", "caption": "Campus Life" },
+    { "id": 12, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.26.23%20PM.jpeg", "caption": "Campus Life" },
+    { "id": 13, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.26.24%20PM.jpeg", "caption": "Campus Life" },
+    { "id": 14, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.26.25%20PM.jpeg", "caption": "Campus Life" },
+    { "id": 15, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.26.32%20PM.jpeg", "caption": "Campus Life" },
+    { "id": 16, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.26.33%20PM.jpeg", "caption": "Campus Life" },
+    { "id": 17, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.26.43%20PM.jpeg", "caption": "Campus Life" },
+    { "id": 18, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.26.45%20PM.jpeg", "caption": "Campus Life" },
+    { "id": 19, "imageUrl": "assets/gallery/WhatsApp%20Image%202026-04-21%20at%209.34.32%20PM.jpeg", "caption": "Campus Life" }
+  ]
+}

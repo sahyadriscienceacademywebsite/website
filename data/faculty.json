@@ -1,0 +1,34 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Dr. Santosh Patil",
+    "role": "Senior Chemistry Head • 15+ Yrs Exp",
+    "description": "Renowned for simplifying organic chemistry. Ex-HOD at top state institutes with multiple AIR top 100 students mentored.",
+    "emoji": "👨‍🏫",
+    "imageUrl": ""
+  },
+  {
+    "id": 2,
+    "name": "Priya Nair (M.Sc)",
+    "role": "Mathematics Expert • 8+ Yrs Exp",
+    "description": "Specialist in advanced calculus and core algebra matching straight to JEE Advanced requirements and Olympiads.",
+    "emoji": "👩‍🏫",
+    "imageUrl": ""
+  },
+  {
+    "id": 3,
+    "name": "Vikram Joshi",
+    "role": "Physics Mentor • 10+ Yrs Exp",
+    "description": "Known for his highly practical demonstrative teaching method mapping mechanics onto real-world frameworks.",
+    "emoji": "👨‍🔬",
+    "imageUrl": ""
+  },
+  {
+    "id": 4,
+    "name": "Arati Singh (Ph.D)",
+    "role": "Biology & NEET Head • 12+ Yrs Exp",
+    "description": "Exceptional focus on NCERT decoding. Successfully guided hundreds of medical aspirants directly into top tier colleges.",
+    "emoji": "👩‍🔬",
+    "imageUrl": ""
+  }
+]

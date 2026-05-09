@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block admin panel from being indexed
+Disallow: /admin/
+Disallow: /adminv2/
+
+# Sitemap location
+Sitemap: https://sahyadriscienceacademy.com/sitemap.xml

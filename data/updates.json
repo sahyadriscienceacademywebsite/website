@@ -1,0 +1,82 @@
+﻿[
+  {
+    "id": 1,
+    "title": "JEE Mains April 2026 Batch — Seats Filling Fast!",
+    "date": "2026-03-15T10:00:00Z",
+    "tag": "Announcement",
+    "tagType": "announcement",
+    "description": "New intensive batch for JEE Mains April 2026 starting on 1st April. Mentorship by top faculty with daily practice sessions. Only 25 seats available — enroll now to secure your spot.",
+    "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800",
+    "link": "contact.html"
+  },
+  {
+    "id": 2,
+    "title": "Congratulations! NEET 2025 Results — 15 Students Selected",
+    "date": "2026-03-10T14:30:00Z",
+    "tag": "Result",
+    "tagType": "result",
+    "description": "15 Sahyadri Science Academy students qualified NEET 2025 with top scores. Proud moment for the entire Sahyadri family!",
+    "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500",
+    "link": "results.html"
+  },
+  {
+    "id": 3,
+    "title": "How to Score 95%+ in Class 10 SSC Board in 60 Days",
+    "date": "2026-03-05T09:15:00Z",
+    "tag": "Study Tips",
+    "tagType": "tips",
+    "description": "Our faculty shares the proven 60-day preparation strategy used by our toppers every year. Start today.",
+    "imageUrl": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=500",
+    "link": "contact.html"
+  },
+  {
+    "id": 4,
+    "title": "MHT-CET 2026 Crash Course — 90 Days Intensive Program",
+    "date": "2026-02-28T11:00:00Z",
+    "tag": "Announcement",
+    "tagType": "announcement",
+    "description": "Specially designed crash course covering the entire MHT-CET syllabus in 90 days. Physics, Chemistry & Maths with daily tests.",
+    "imageUrl": "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&w=500",
+    "link": "contact.html"
+  },
+  {
+    "id": 5,
+    "title": "SSC Board 2025 — 100% Pass Rate, 12 Students Above 90%",
+    "date": "2026-02-20T16:00:00Z",
+    "tag": "Result",
+    "tagType": "result",
+    "description": "All 45 students passed with flying colours. 12 students scored above 90% — a new record for Sahyadri Science Academy!",
+    "imageUrl": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=500",
+    "link": "results.html"
+  },
+  {
+    "id": 6,
+    "title": "Parent-Teacher Meeting — February 2026 Batch Review",
+    "date": "2026-02-10T10:00:00Z",
+    "tag": "Event",
+    "tagType": "event",
+    "description": "Monthly PTM conducted successfully with 85% parent attendance. Report cards and performance insights shared with every family.",
+    "imageUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=500",
+    "link": "contact.html"
+  },
+  {
+    "id": 7,
+    "title": "Top 5 Revision Techniques for Competitive Exams",
+    "date": "2026-01-25T08:30:00Z",
+    "tag": "Study Tips",
+    "tagType": "tips",
+    "description": "Active recall, spaced repetition, and more — our faculty's curated list of powerful revision strategies for JEE, NEET, and MHT-CET.",
+    "imageUrl": "https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=500",
+    "link": "contact.html"
+  },
+  {
+    "id": 8,
+    "title": "Welcome to the new academic year 2026!",
+    "date": "2026-01-01T09:00:00Z",
+    "tag": "Announcement",
+    "tagType": "announcement",
+    "description": "Wishing all our students a prosperous and successful academic year ahead.",
+    "imageUrl": "",
+    "link": "contact.html"
+  }
+]
