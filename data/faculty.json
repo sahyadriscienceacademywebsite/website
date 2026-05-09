@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": 1,
     "name": "Dr. Santosh Patil",
@@ -30,5 +30,13 @@
     "description": "Exceptional focus on NCERT decoding. Successfully guided hundreds of medical aspirants directly into top tier colleges.",
     "emoji": "👩‍🔬",
     "imageUrl": ""
+  },
+  {
+    "id": 1778338525537,
+    "name": "Prof. Aishwarya Mane",
+    "role": "B.E.Electrnics",
+    "description": "Experienced educator with 10+ years of teaching Mathematics and Science for Classes 8th–10th (SSC & CBSE, English Medium).\nAlso specializes in Mathematics for Classes 11th & 12th, focusing on strong concepts and exam success.\nKnown for clear explanations, structured practice, and consistent results.",
+    "emoji": "👨‍🏫",
+    "imageUrl": "assets/uploads/1778338523150-WhatsApp_Image_2026-05-09_at_16.12.45.jpeg"
   }
 ]
