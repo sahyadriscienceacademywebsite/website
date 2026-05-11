@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       resultsGrid.innerHTML += `
         <div class="res-card-9x16 animate-fade-up">
           <img src="${res.imageUrl}" alt="Result Image" loading="lazy" />
-          <div class="res-date">${formattedDate}</div>
         </div>
       `;
     });

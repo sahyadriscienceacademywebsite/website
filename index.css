@@ -2512,6 +2512,15 @@ a {
   font-size: 16px;
 }
 
+.footer-logo .logo-img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--white);
+  object-fit: contain;
+  padding: 2px;
+}
+
 .footer-brand p {
   font-size: 13.5px;
   line-height: 1.7;
@@ -2522,24 +2531,49 @@ a {
 
 .social-links {
   display: flex;
-  gap: 8px;
+  gap: 16px;
+  margin-top: 8px;
 }
 
 .social-btn {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: rgba(255, 255, 255, 0.8);
-  padding: 7px 14px;
-  border-radius: 99px;
-  font-size: 12px;
-  font-weight: 600;
-  transition: all 0.2s;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  border: none;
 }
 
-.social-btn:hover {
-  background: var(--orange);
-  border-color: var(--orange);
-  color: white;
+.social-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.social-btn.instagram {
+  background: linear-gradient(to right, #ec4899, #ef4444, #f59e0b);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 4px 14px rgba(236, 72, 153, 0.3);
+}
+
+.social-btn.instagram:hover {
+  transform: scale(1.05) translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(236, 72, 153, 0.5);
+  filter: brightness(1.1);
+}
+
+.social-btn.youtube {
+  background: #dc2626; /* Tailwind red-600 */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 4px 14px rgba(220, 38, 38, 0.3);
+}
+
+.social-btn.youtube:hover {
+  background: #b91c1c; /* Tailwind red-700 */
+  transform: scale(1.05) translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(220, 38, 38, 0.5);
 }
 
 .footer-col h4 {
@@ -3868,22 +3902,63 @@ a {
 }
 .prog-script {
   font-family: 'Poppins', 'Inter', sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 1.4px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 5px 12px;
-  border-radius: 99px;
-  background: rgba(0, 0, 0, 0.04);
+  gap: 8px;
+  padding: 8px 20px;
+  border-radius: 9999px;
+  color: white;
+  transition: all 0.3s ease;
+  width: max-content;
+  align-self: flex-start;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
-.c1 .prog-script { color: #1D4ED8; background: rgba(59, 130, 246, 0.08); }
-.c2 .prog-script { color: #7C3AED; background: rgba(139, 92, 246, 0.08); }
-.c3 .prog-script { color: #EA6B0A; background: rgba(249, 115, 22, 0.08); }
-.c4 .prog-script { color: #047857; background: rgba(16, 185, 129, 0.08); }
+
+.prog-script:hover {
+  transform: scale(1.05);
+}
+
+.c1 .prog-script { 
+  background: linear-gradient(145deg, #3b82f6, #1e40af); 
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 4px 14px rgba(59, 130, 246, 0.3); 
+}
+.c1 .prog-script:hover { 
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(59, 130, 246, 0.4); 
+}
+.c1 .prog-script::before { content: '🎓'; font-size: 18px; }
+
+.c2 .prog-script { 
+  background: linear-gradient(145deg, #6366f1, #4338ca); 
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 4px 14px rgba(99, 102, 241, 0.3); 
+}
+.c2 .prog-script:hover { 
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(99, 102, 241, 0.4); 
+}
+.c2 .prog-script::before { content: '📚'; font-size: 18px; }
+
+.c3 .prog-script { 
+  background: linear-gradient(145deg, #8b5cf6, #6d28d9); 
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 4px 14px rgba(168, 85, 247, 0.3); 
+}
+.c3 .prog-script:hover { 
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(168, 85, 247, 0.4); 
+}
+.c3 .prog-script::before { content: '🧪'; font-size: 18px; }
+
+.c4 .prog-script { 
+  background: linear-gradient(145deg, #f97316, #ea580c); 
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 4px 14px rgba(249, 115, 22, 0.3); 
+}
+.c4 .prog-script:hover { 
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(249, 115, 22, 0.4); 
+}
+.c4 .prog-script::before { content: '🚀'; font-size: 18px; }
 
 .prog-desc {
   font-size: 15px;

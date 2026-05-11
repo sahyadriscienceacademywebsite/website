@@ -100,8 +100,27 @@
     .fh-grid {
       display: grid;
       grid-template-columns: 450px 1fr;
-      gap: 80px;
+      gap: 48px; /* Tailwind gap-12 */
       align-items: center;
+    }
+
+    /* ── REVERSE LAYOUT FOR ALTERNATING SECTIONS ── */
+    .fh-grid-reverse {
+      grid-template-columns: 1fr 450px;
+    }
+
+    .fh-content-card-reverse {
+      order: 1;
+    }
+
+    .fh-img-wrapper-reverse {
+      order: 2;
+    }
+
+    .fh-content-card-reverse::before {
+      left: auto !important;
+      right: 0 !important;
+      border-radius: 4px 0 0 4px !important;
     }
 
     /* ── PREMIUM FOUNDER IMAGE FRAME ── */
@@ -706,10 +725,10 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 1100px) {
-      .fh-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
-      .fh-img-wrapper { order: 1 !important; max-width: 500px; margin: 0 auto; }
-      .fh-content-card { order: 2 !important; }
-      .fh-content-card::before { left: 50%; transform: translateX(-50%); top: 0; width: 60px; height: 4px; border-radius: 0 0 4px 4px; }
+      .fh-grid, .fh-grid-reverse { grid-template-columns: 1fr !important; gap: 40px; text-align: center; }
+      .fh-img-wrapper, .fh-img-wrapper-reverse { order: 1 !important; max-width: 500px; margin: 0 auto; }
+      .fh-content-card, .fh-content-card-reverse { order: 2 !important; }
+      .fh-content-card::before, .fh-content-card-reverse::before { left: 50% !important; right: auto !important; transform: translateX(-50%) !important; top: 0 !important; width: 60px !important; height: 4px !important; border-radius: 0 0 4px 4px !important; }
       .faculty-grid-new { grid-template-columns: repeat(2, 1fr); }
       .leadership-grid-new { grid-template-columns: 1fr; gap: 40px; }
     }
@@ -739,13 +758,13 @@
         <span>📢 JEE, NEET, MHT-CET, NDA, UPSC & other entrance exams — Enroll Now</span>
         <span>🏆 100% Results in 10th & 12th Board 2025!</span>
         <span>📞 Call us: +91 836 982 6220</span>
-        <span>📍 Shewalewadi, Pune — 412307</span>
+        <span>📍 Shewalewadi Phata, Pune — 412307</span>
         <span>⭐ Rated 4.9/5 by 230+ Students & Parents</span>
         <span>🎉 New Batch Starting April 2026 — Limited Seats!</span>
         <span>📢 JEE, NEET, MHT-CET, NDA, UPSC & other entrance exams — Enroll Now</span>
         <span>🏆 100% Results in 10th & 12th Board 2025!</span>
         <span>📞 Call us: +91 836 982 6220</span>
-        <span>📍 Shewalewadi, Pune — 412307</span>
+        <span>📍 Shewalewadi Phata, Pune — 412307</span>
         <span>⭐ Rated 4.9/5 by 230+ Students & Parents</span>
       </div>
     </div>
@@ -826,82 +845,78 @@
       </div>
     </section>
 
-    <!-- NEW LEADERSHIP TEAM SECTION (REF IMAGE MATCH) -->
-    <section class="leadership-section-new">
-      <div class="bg-blob bg-blob-1"></div>
-      <div class="bg-blob bg-blob-2"></div>
+    <!-- MANAGING DIRECTOR SECTION (PANKAJ MANE) -->
+    <section class="founder-section section-premium">
+      <div class="container fh-grid fh-grid-reverse">
+        <div class="fh-content-card fh-content-card-reverse reveal">
+          <div class="fh-badge">Managing Director</div>
+          <h2 class="fh-name">Prof. Pankaj Mane</h2>
+          <span class="fh-sub">Expert Pharmacist & Academic Mentor</span>
+          <p class="fh-desc">Dedicated educator and pharmacist committed to excellence in science education. He guides students toward success through quality teaching, conceptual clarity, and strategic academic planning.</p>
 
-      <div class="container relative z-10">
-        <div class="text-center mb-20 reveal">
-          <div class="header-pill">Leadership Team</div>
-          <h2 class="leadership-h2">Leadership <span>Team</span></h2>
-          <p class="leadership-sub">The visionaries steering Sahyadri Science Academy towards academic excellence.</p>
-          <div class="header-line"></div>
-        </div>
-
-        <div class="leadership-grid-new">
-          <!-- CARD 1: PROF. PANKAJ MANE -->
-          <div class="l-card reveal">
-            <div class="l-img-wrap">
-              <div class="l-img-box">
-                <img src="assets/founder_pankaj.png" alt="Prof. Pankaj Mane" />
-              </div>
-              <div class="l-img-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <div class="founder-stats-modern">
+            <!-- Card 1 -->
+            <div class="stat-card-pill">
+              <div class="stat-pill-icon">🎓</div>
+              <div>
+                <h3 class="stat-pill-num">Academic</h3>
+                <p class="stat-pill-label">Mentor</p>
               </div>
             </div>
-            
-            <div class="l-content">
-              <h3 class="l-name">Prof. Pankaj Mane</h3>
-              <div class="l-role-badge">Founder & Managing Director</div>
-              
-              <div class="l-tags">
-                <span class="l-tag">Academic Mentor</span>
+
+            <!-- Card 2 -->
+            <div class="stat-card-pill">
+              <div class="stat-pill-icon">💊</div>
+              <div>
+                <h3 class="stat-pill-num">Expert</h3>
+                <p class="stat-pill-label">Pharmacist</p>
               </div>
-              
-              <p class="l-desc">Dedicated educator and pharmacist committed to excellence in science education. Guides students toward success through quality teaching and conceptual clarity.</p>
-            </div>
-            
-            <div class="l-socials">
-              <a href="#" class="l-social-btn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              </a>
-              <a href="#" class="l-social-btn email">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </a>
             </div>
           </div>
+        </div>
 
-          <!-- CARD 2: PROF. AISHWARYA MANE -->
-          <div class="l-card reveal" style="transition-delay: 0.2s;">
-            <div class="l-img-wrap">
-              <div class="l-img-box">
-                <img src="assets/founder_aishwarya.png" alt="Prof. Aishwarya Mane" />
-              </div>
-              <div class="l-img-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <div class="fh-img-wrapper fh-img-wrapper-reverse reveal">
+          <div class="fh-img-inner">
+            <img src="assets/founder_pankaj.png" alt="Prof. Pankaj Mane" class="fh-img" />
+          </div>
+          <div class="fh-badge-floating">👨‍🏫</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CO-FOUNDER SECTION (AISHWARYA MANE) -->
+    <section class="founder-section section-light">
+      <div class="container fh-grid">
+        <div class="fh-img-wrapper reveal">
+          <div class="fh-img-inner">
+            <img src="assets/founder_aishwarya.png" alt="Prof. Aishwarya Mane" class="fh-img" />
+          </div>
+          <div class="fh-badge-floating">👩‍🏫</div>
+        </div>
+        
+        <div class="fh-content-card reveal">
+          <div class="fh-badge" style="background: rgba(37, 99, 235, 1); color: #fff;">CO-FOUNDER</div>
+          <h2 class="fh-name">Prof. Aishwarya Mane</h2>
+          <span class="fh-sub">Maths & Science Expert</span>
+          <p class="fh-desc">Experienced educator specializing in Mathematics and Science for Classes 8th–12th. Known for clear explanations, structured practice, and consistent results in competitive exam preparation.</p>
+
+          <div class="founder-stats-modern">
+            <!-- Card 1 -->
+            <div class="stat-card-pill">
+              <div class="stat-pill-icon">📚</div>
+              <div>
+                <h3 class="stat-pill-num">10+ Years</h3>
+                <p class="stat-pill-label">Experience</p>
               </div>
             </div>
-            
-            <div class="l-content">
-              <h3 class="l-name">Prof. Aishwarya Mane</h3>
-              <div class="l-role-badge">Co-Founder</div>
-              
-              <div class="l-tags">
-                <span class="l-tag">10+ Years Experience</span>
-                <span class="l-tag">Maths & Science Expert</span>
+
+            <!-- Card 2 -->
+            <div class="stat-card-pill">
+              <div class="stat-pill-icon">📐</div>
+              <div>
+                <h3 class="stat-pill-num">Maths & Science</h3>
+                <p class="stat-pill-label">Expert</p>
               </div>
-              
-              <p class="l-desc">Experienced educator specializing in Mathematics and Science for Classes 8th–12th. Known for clear explanations, structured practice, and consistent results.</p>
-            </div>
-            
-            <div class="l-socials">
-              <a href="#" class="l-social-btn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              </a>
-              <a href="#" class="l-social-btn email">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </a>
             </div>
           </div>
         </div>
@@ -999,8 +1014,14 @@
           <p>Pune's trusted coaching institute for 5th–12th standard, JEE, NEET, MHT-CET, NDA, UPSC & other entrance
             exams since 2014.</p>
           <div class="social-links">
-            <a href="https://www.instagram.com/sahyadri_science_academy_pune?utm_source=qr&igsh=MWV1azR0dThqZ2Rndw==" target="_blank" rel="noopener noreferrer" class="social-btn">📷 Instagram</a>
-            <a href="https://youtube.com/@sahyadriclasses?si=gIN96G35bPlXyXGb" target="_blank" rel="noopener noreferrer" class="social-btn">▶️ YouTube</a>
+            <a href="https://www.instagram.com/sahyadri_science_academy_pune?utm_source=qr&igsh=MWV1azR0dThqZ2Rndw==" target="_blank" rel="noopener noreferrer" class="social-btn instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              Instagram
+            </a>
+            <a href="https://youtube.com/@sahyadriclasses?si=gIN96G35bPlXyXGb" target="_blank" rel="noopener noreferrer" class="social-btn youtube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+              YouTube
+            </a>
           </div>
         </div>
         <div class="footer-col">
@@ -1019,9 +1040,10 @@
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
-          <p>📍 01, Gajtara Apartment,<br />Solapur-Pune Hwy,<br />Shewalewadi, Pune 412307</p>
-          <p>📞 <a href="tel:+918369826220">+91 836 982 6220</a></p>
-          <p>🕐 Mon–Sat: 7AM – 9PM</p>
+          <p style="margin-bottom: 12px; font-size: 13.5px; line-height: 1.6;">📍 <strong>Shewalewadi Phata,:</strong><br />01, Gajtara Apartment,<br />Solapur-Pune Hwy, Pune 412307</p>
+          <p style="margin-bottom: 16px; font-size: 13.5px; line-height: 1.6;">📍 <strong>Uruli Kanchan:</strong><br />First Floor, Bagade Imperial, Above Axis Bank, Ashram Road Chowk, Solapur–Pune Hwy, 412202</p>
+          <p>📞 <a href="tel:+918369826220">+91 836 982 6220</a><br/>📞 <a href="tel:+917972932741">+91 797 293 2741</a></p>
+          <p style="margin-top: 10px;">🕐 Mon–Sat: 7AM – 9PM</p>
         </div>
       </div>
       <div class="footer-bottom">
