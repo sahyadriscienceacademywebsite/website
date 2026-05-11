@@ -6,4 +6,4 @@ Disallow: /admin/
 Disallow: /adminv2/
 
 # Sitemap location
-Sitemap: https://sahyadriscienceacademy.com/sitemap.xml
+Sitemap: https://www.sahyadriscienceacademy.com/sitemap.xml
