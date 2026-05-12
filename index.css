@@ -699,35 +699,40 @@ a {
 
 @media (max-width: 768px) {
   .hero {
-    min-height: auto;
-    flex-direction: column;
-    padding: 100px 20px 60px;
+    min-height: 90vh;
+    padding: 120px 20px 80px;
     text-align: center;
+    justify-content: center;
   }
 
   .hero::before {
     background: linear-gradient(
       180deg,
-      #0f2a5a 0%,
-      #0f2a5a 70%,
-      rgba(15, 42, 90, 0.9) 100%
+      rgba(15, 42, 90, 0.95) 0%,
+      rgba(15, 42, 90, 0.7) 50%,
+      rgba(15, 42, 90, 0.95) 100%
     );
+    z-index: 1;
   }
 
   .hero-img-node {
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 300px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    border-radius: 20px;
-    order: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    border-radius: 0;
+    object-fit: cover;
+    z-index: 0;
   }
 
   .hero-content {
     padding-left: 0;
     max-width: 100%;
-    order: 2;
+    z-index: 2;
   }
 
   .hero-title {
@@ -4687,6 +4692,13 @@ a {
     font-size: 16px;
     border-radius: 10px;
     display: block;
+  }
+
+  .nav-container {
+    padding: 0 16px;
+    gap: 12px;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .hamburger {
