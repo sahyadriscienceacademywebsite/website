@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "sahyadriscienceacademy.com"
+        }
+      ],
+      "destination": "https://www.sahyadriscienceacademy.com/$1",
+      "permanent": true
+    }
+  ]
+}
